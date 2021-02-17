@@ -37,7 +37,7 @@ extract$date.time <- as.POSIXct(paste(extract$Date, extract$Time), format = "%Y-
 extract <- na.omit(extract)
 
 ## 6) Create plot
-##***Establish languaje, because my operative system is in spanish
+##***Establish language, because my operating system is in spanish
 Sys.setlocale(locale = "USA")
 ##***save file using the next line to get a best image that if we use dev.copy
 png(file = "plot2.png",width = 480, height = 480, units = "px")
@@ -48,4 +48,4 @@ with(extract, plot(date.time,Global_active_power,type='l',xlab='',ylab='Global A
 ##dev.copy(png, file = "plot2.png" ,width = 480, height = 480, units = "px")
 
 ## 8) Close the file
-dev.off()
+dev.off() 
